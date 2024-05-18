@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Load and Run Ingot Script</title>
+</head>
+<body>
+  <button id="executeButton">Load and Run Ingot Script</button>
+
+  <script>
+    const executeButton = document.getElementById("executeButton");
+    executeButton.addEventListener("click", function() {
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot/ingot.min.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</body>
+</html>
